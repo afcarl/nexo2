@@ -65,3 +65,6 @@ collector/jobs
 .Rhistory
 
 file-server/data
+
+# Graph DB
+*nexo-neo4j-db

@@ -9,11 +9,10 @@ enrichment:
   ports:
     - "5000:5000"
 
-
-neo4j:
-  build: ./neo4j
+rexster:
+  build: ./rexster
   ports:
-    - "7474:7474"
+    - "8182:8182"
 
 data:
   image: ubuntu
