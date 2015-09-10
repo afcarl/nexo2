@@ -14,7 +14,6 @@ RUN pip2 install flask-restful
 
 # Form a set of standard directories.
 RUN mkdir -p /downloads
-#RUN mkdir -p /work
 
 # Install python libraries
 
@@ -34,4 +33,4 @@ WORKDIR  /downloads/nexo-term-enrichment
 EXPOSE 5000
 
 RUN python -c "from flask import Flask"
-CMD ["python", "./nexo.py"]
+CMD ["python", "./app.py"]

@@ -3,3 +3,17 @@
 #
 #
 #
+
+enrichment:
+  build: ./term-enrichment
+  ports:
+    - "5000:5000"
+
+
+neo4j:
+  build: ./neo4j
+  ports:
+    - "7474:7474"
+
+data:
+  image: ubuntu
