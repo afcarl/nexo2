@@ -1,18 +1,16 @@
-# 
+#
 # Setting file for NeXO Application
 #
 #
 #
 
-enrichment:
-  build: ./term-enrichment
-  ports:
-    - "5000:5000"
+# enrichment:
+#   build: ./term-enrichment
+#   ports:
+#     - "5000:5000"
+#
 
 rexster:
-  build: ./rexster
+  build: rexster
   ports:
     - "8182:8182"
-
-data:
-  image: ubuntu

@@ -5,4 +5,5 @@
 This is a new version of NeXO deployed as collection of Docker containers.
 
 ## How to Deploy
-(TBD)
+
+* Make sure you are running Docker daemon
