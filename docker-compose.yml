@@ -14,3 +14,10 @@ rexster:
   build: rexster
   ports:
     - "8182:8182"
+
+nexo:
+  build: nexo-server
+  links:
+    - rexster
+  ports:
+    - "80:3000"

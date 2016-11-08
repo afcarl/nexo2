@@ -8,7 +8,7 @@ RUN mkdir /nexo-rexster
 WORKDIR /nexo-rexster
 
 # Download NeXO database
-RUN wget http://chianti.ucsd.edu/~kono/ci/data/nexo/nexo-final.tar.gz
+RUN wget http://chianti.ucsd.edu/~kono/ci/data/nexo/nexo-latest.tar.gz
 # Download rexster v 2.4.0
 RUN wget http://chianti.ucsd.edu/~kono/ci/data/atgo/rexster-server-2.4.0.zip
 
@@ -21,7 +21,7 @@ ADD ./rexster.xml /nexo-rexster/rexster-server-2.4.0/config/
 ADD ./scripts/* /nexo-rexster/rexster-server-2.4.0/scripts/
 
 # Unzip the pre-built database
-RUN tar zxvf nexo-final.tar.gz
+RUN tar zxvf nexo-latest.tar.gz
 
 # Default rexster port
 EXPOSE 8182

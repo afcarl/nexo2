@@ -1,0 +1,14 @@
+{
+  "name": "nexo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.2",
+    "jade": "*",
+    "request": "^2.78.0",
+    "underscore": "*"
+  }
+}
